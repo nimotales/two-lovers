@@ -1,0 +1,1 @@
+for item in .\src\*.docx; do pandoc "$item" -o "${item%.docx}.md" --extract-media=. "$item" ; done
